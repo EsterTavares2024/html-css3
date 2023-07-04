@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML 5</title>
+    <!-- O exemplo abaixo é para inserir vídeos hospedados no próprio servidor-->
+</head>
+<body>
+    <h1> Inserindo vídeos hospedados localmente </h1>
+    <p> Este vídeo está hospedado no meu próprio servidor </p>
+     <video src="media/meuvideo.ogv.ogv" width="500" height="500" controls autoplay loop poster="imagens/baleia.png.png" ></video>
+     <source src="media/meuvideo.mp4.mp4" type="video/mp4">
+     <source src="media/meuvideo.webm.webm" type="video/webm">
+     <source src="media/meuvideo.ogv.ogv" type="video/ogg">
+      <p> Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    <h1> Inserindo Vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1> Inserindo vídeos do Vímeo </h1>
+    <iframe src="https://player.vimeo.com/video/821962936?h=8f89419cc4&autoplay=1&loop=1&title=0&byline=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p> <br /></p>
+    <!-- é importante inserir a linha de código acima para incluir todos os formatos de vídeo possíveis, ordenar por tamanho, do menor pro maior MP4 por primeiro-->
+   <!-- Vídeo não listado no canal do youtube as pessoas ainda conseguem ver só não pesquisar na pesquisa. O Vímeo é uma opção para inserir vídeos que não se quer que pessoa de fora que não estão efetuando curso pago vejam-->
+    <!-- O Safari não é compatível pelo Safari, por isso é importante por todos os formatos de vídeo descritos acima, -->
+</body>
+</html>

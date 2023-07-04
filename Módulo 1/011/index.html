@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1> Imagem Dinâmica</h1>
+    <p> Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <!-- Tem que criar aqui em cima o comando para imagens tam P SEMPRE! senão dá b.o-->
+        <source media="(max-width:750px)"srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <!-- a tag picture diz que vai aparecer uma imagem abaixo é a tag padrão para carregar imagens além disso, o código <img src="imagens/foto-g.png" alt="imagem flexível"> é o código base inicial para inserir imagem-->
+    <!-- 300px é celular 700px é tablet e 1000px pra mais é computador. Deixar 50px de folga por causa do scroll-->
+    <!-- Imagens dinâmicas são aquelas que vão se adaptando conforme o tamanho das telas-->
+    <h1> Reproduzindo Áudio </h1>
+    <p> Vamos aprender a reproduzir áudios em HTML5 </p>
+    <audio src="media/emotional mess.mp3" controls preload="metadata" autoplay controls loop> </audio>
+    <!-- Opções da tag Audio preload: Auto: carrega o áudio ao carregar a página, pode deixar lento pois o áudio pode ser muito comprido. Metadata: Carrega só as informações None: Não carrega nada préviamente, só quando o usuário aperta play. O loop deixa o áudio tocando-->
+    <audio>
+        <source src="media/on the rocks.mp3" type="audio/mpeg">
+        <source src="media/on the rocks.ogg" type="audio/ogg">
+        <source src="media/on the rocks.wav" type="audio/wav">
+        <!-- o reprodutor irá rodar de cima para baixo para reproduzir o som em um dos 3 formatos acima, caso navegador não seja compatível com nenhum, por a mensagem abaixo. Arquivos Wav são muito pesados!!-->
+        <p> infelizmente seu navegador não consegue reproduzir áudio. <a href="media/on the rocks.mp3">Clique aqui para baixar o arquivo MP3</a> </p>
+
+    </audio>
+    <!-- esse type audio/mpeg se encontra naquele site iana.org no material-->
+    <!-- os sites são compatíveis com formatos MP# WAV OGG-->
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; 
+            /* Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em:  tamanho atual da fonte ( que é a altura do M maiusculo de uma letra) / ex: altura-x, rem: altura root que está configurada no body, vm: View port: porcentagem da view port da largura, vh: altura da view port )
+            recomendado: px e em
+            Font-size: 1cm quer dizer que a largura da palavra é 1cm | 1in quer dizer 1 polegada, ou seja, 2,54cm
+            16px é o font-size padrão das palavras
+            16px geralmente é igual a 1 em
+            font-weight: Peso da fonte
+            Tipos de peso das fontes: ligher normal bold bolder
+            font-weight: 400 é o peso normal
+            Font-style: Se escolhe se quer normal ou italico
+            text-decoration: usa-se para sublinhar as palavras
+            */
+            font-size: 16px;
+            font-weight: lighter;
+            font-style: italic;
+            text-decoration: underline;
+        }
+        h1 {
+            font-family: 'work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+        
+        /* shorthand font [condensa todas as configurações de fontes
+        Ordem:
+       1. font-style > 2.font-weight > 3.font-size > 4.font-family
+        segue exemplo abaixo:
+        Ou seja, no lugar de se usar as 4 linhas acima em h1, se usa somente uma linha para declarar as características seguindo a ordem descrita acima*/
+       font: italic bolder 3em 'work sans' , sans-serif;
+    }
+    2 {
+        font: bold 2em 'work sans';
+    }
+    </style>
+</head>
+<body style="font-family: arial;">
+    <h1> Trabalhando com fontes</h1>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptate eligendi natus at officia molestiae eaque voluptatem vero praesentium provident id ut quas, rerum laboriosam impedit ipsum nobis, eos quia.</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, optio qui sed rerum possimus laboriosam provident? Animi nulla, itaque minima temporibus ipsa officia doloribus expedita veniam reprehenderit ipsam! Dolorem, saepe.</p>
+    <h2> Subtítulo do exercício</h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quo blanditiis quod tenetur porro asperiores necessitatibus consectetur. Soluta doloribus facere ducimus, asperiores veniam provident quis harum aliquam nisi totam amet!</p>
+    <!-- buscar no google Css web safe font combination para ver quais fontes combinam site recomendado w3schools.com
+    Se se colocar somente sans-serif no font-family o dispositivo vai achar a fonte sem serifa mais próxima, todas as fontes possuem pelo menos uma delas sem serifa
+Se se por só serifa vai escolher qualquer fonte serifada
+apertar control + space vai abrir as opções de fontes-->
+</body>
+</html>

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: linear-gradient(to right, #35403A, #4C594F );
+}
+main{
+    background-color: white;
+    width: 600px;
+    border-radius:10px;
+    box-shadow: 5px 5px 15px #181d1ab6;
+    padding: 10px;
+    margin: auto; 
+}
+h1 {
+  color: #A4A69C;
+  text-align: center;
+  text-shadow: 1px 1px 0px #a4a69ca9;
+
+}
+h2 {
+color: #35403A
+}
+p{
+    text-align: justify;
+}
+
+}
+/*se aumentando o tamanho da tela o texto ficará no meio da página com a tag margin:auto 
+Padding: é a largura entre o início do box branco e o começo das escritas no centro da tela 
+Border -radius: deixa as bordas da caixa de texto ao centro mais arredondadas
+Width: é a largura entre a borda da tela e o início da caixa de texto ao centro
+box-shadow: 1º valor é o quanto a sombra no canto inferior do texto vai andar para o lado, 0 2º parâmetro é o quanto a sombra vai andar pra baixo,  o 3º parâmetro quanto a sombra vai espalhar e o último parâmetro é o tanto de transparência que a sombra vai ter. Tem que aumentar um pouco a transparência ao se clicar na cor, sempre escolher a cor mais escura para aparecer a borda arredondada

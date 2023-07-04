@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Repsonsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px;
+            max-width: 800px;
+            margin: auto;
+        }
+        img {
+            width: 100%;
+        }
+        /* 320px é o tamanho mín de largura de celulares antigos 
+        width 100% faz com que a imagem fique maior quando se diminui a largura da tela
+        Utilizar a extensão windows resizer para regular e testar a responsividade nos diversos tamanhos de tela para que não ocorra quebras */
+    </style>
+</head>
+<body>
+    <main>
+        <h1> Testando Responsividade</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dicta culpa vitae totam soluta veniam necessitatibus commodi eligendi sequi quisquam vel temporibus quidem dolor alias mollitia voluptatum iste, enim inventore.</p>
+        <!-- O Recurso Picture é usado para mudar a imagem de acordo com a largura da tela, no ex abaixo, telas com até 600px de largura será mostrado a imagem pq (configurada em tamanho pequeno) a partir de 600px, será mostrado a imagem configurada maior (irina-blok) 
+        -- para usar a "picture", é só envelopar toda a função img-->
+        <picture>
+        <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg"> 
+        <img src="imagens/irina-blok.jpg" alt=""></picture>
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis similique optio fugit, ipsum inventore necessitatibus delectus nostrum? Quis, architecto esse excepturi beatae quo hic accusantium fuga quibusdam nemo explicabo similique.</p>
+    </main>
+    
+</body>
+</html>

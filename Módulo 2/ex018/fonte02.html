@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family:'Love Song';
+            src: url('Mf\ Love\ Song.ttf') format('truetype');
+            font-weight:normal;
+            font-style: normal;
+
+            /* Tipos de format ()
+            - Opentype (otf)
+            -truetype (ttf)
+            -embedded-opentype
+            -Truetype-aat (apple advanced typografy)
+            -svg 
+            Geralmente otf e ttf funcionam na maioria dos navegadores*/
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: 'Love Song', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+<h1> Título</h1>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eos repudiandae aliquam, nisi omnis, non dolor perspiciatis quos cumque quia ratione, cupiditate id doloribus. Quod ullam sapiente atque deserunt fuga!</p>
+</body>
+<!-- Dafont.com = site de fontes 
+Verificar se a fonte possui todos os glifos, isto é as versões com todos os acentos
+-- lembrar de criar pasta dentro do arquivo principal chamada "fontes"
+-- Se a fonte acima love song estiver no estilo externo do css, inserir em url: ../fonts/love song
+-- Plugin Fonts Ninja: USado para descobrir qual fonte se está usando no texto nos sites
+
+Sites para descobrir qual é a fonte utilizada em imagens:
+1. Whatfontis.com
+2.fontsquirrel.com
+3.myfonts.com-->
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+        <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <h1 id="principal"> Criando Sites com HTML e Css</h1>
+    <!-- ao se inserir id = principal no h1 acima, estamos sinalizando que ele deve ter formatação diferente dos outros h1 listados abaixo (inserir essa formatação no arquivo css)
+    
+    IMPORTANTE! 
+    em HTML é ID em Css é # (só pode aplicar num elemento por página de html)
+    em HTML é class em Css é . (pode aplicar em vários elementos)
+
+- Regra: se já foi utilizado ID principal, não pode utilizá-lo novamente
+- Para formatar dois elementos da mesma forma deve-se usar a class= basico [ela também faz a configuração personalizada porém não é identificada com a #, mas sim com "." podemos ter várias classes para os elemtentos.
+- Devemos dar nome as nosas classes de acordo com a função delas. Ex: básico, intermediário, acvançado
+-- lá no arquivo css se insere a formatação com o título: h2.basico h2.avancado [o ponto significa classe]-->
+    <h1> Aprendendo HTML</h1>
+    <h2 class="basico">HTML Básico </h2>
+    <p> Lorem ipsum dolor sit amet consectetur <span class="basico"> adipisicing elit </span>. Qui sed id ea dicta officia maiores eos sint exercitationem maxime nulla iste nihil, corporis aliquid perferendis cumque odit assumenda molestias dolorum?</p>
+    <h2 class="intermediario"> HTML Intermediário</h2>
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus maiores esse, dolorum labore inventore temporibus fuga minus quos voluptate? Quis enim reprehenderit doloremque sit nemo architecto vero iste debitis unde.</p>
+    <h2 class="avancado"> HTML Avançado</h2>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quaerat. Architecto cupiditate impedit voluptas distinctio dolore, labore quas quidem inventore eum voluptate mollitia odio nihil sed odit dolorum obcaecati vel?</p>
+    <h1 class="destaque"> Aprendendo CSS</h1>
+    <h2 class="basico"> Css Básico</h2>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sequi vero eos iste quae molestiae exercitationem quisquam mollitia. Consequatur, consequuntur! Iusto sapiente assumenda tempora? Corporis eligendi atque qui suscipit recusandae!</p>
+    <h2 class="intermediario"> Css intermediário</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis cupiditate obcaecati quis, nulla ex unde? Incidunt at, tempore adipisci quod iusto fugit quibusdam rerum laboriosam! Placeat suscipit tempore vel?</p>
+    <h2 class="avancado destaque"> Css avançado</h2>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nulla, saepe voluptates corrupti culpa perferendis doloremque voluptas, molestias provident debitis ipsam temporibus, odio dolores cumque non rem iure et tempore!</p>
+</body>
+  <!-- para criar um arquivo css: clicar em style.css selecionar depois clicar em control + botão direito do mouse e depois em "abrir/ou criar um"
+-- Ao se criar uma nova classe chamada "destaque" em todo lugar que se aplicar ela no arquivo css ficará com a formatação dela.
+--a tag span irá envelopar parte do texto para poder se aplicar uma classe também, basta selecionar parte do texto > apertar control + shipt + p + enter + span + enter 
+-- Consegue-se aplicar mais de uma classe a um elemento como no ex: <h2 class="avancado destaque"
+-- Dá para inserir um ID e uma classe para o mesmo elemento, PORÉM o ID sempre se sobreporá a classe -->
+</html>

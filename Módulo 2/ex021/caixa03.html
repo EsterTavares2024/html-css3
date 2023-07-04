@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda Personalizada</title>
+    <style>
+        h1 {
+            border: 20px solid black;
+            padding: 10px;
+            border-image-source: url('borda.png');
+            border-image-slice: 27;
+            border-image-repeat: repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1> Teste de Borda </h1>
+</body>
+<!-- Border-image-slice: usada para cortar a imagem de forma que se adeque a tela
+-- border image stretch: esticar a imagem
+-- Shorthand: border-image: url('borda.png'|) 27 repeat;
+source, slice, repeat
+-- Pode-se por também border: tranparent porque em alguns navegadores elas podem não funcionar, pode ser afetado o funcionamento-->
+</html>

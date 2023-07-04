@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+        header {
+            background-color: white;
+            padding: 10p;
+            margin: 10px;
+        }
+        nav { /* menu de navegação*/
+             background-color: rgb(63, 60, 60);
+             box-shadow: 2px 2px 4px 1px black;
+        }
+        nav >a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            
+        }
+        nav > a:hover { /* qunado passar o mouse em cima dos links muda a configuração:*/
+            text-decoration: underline;
+            
+        }
+        main {
+            background-color: white;
+            padding: 10p;
+            margin: 10px; 
+            border-radius: 10px 10px 10px; 
+            box-shadow: 10px 10px 10px 10px black;
+        }
+        h1 {
+            
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article >aside {
+            background-color: gray;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+            div#bola {
+                height: 100px;
+                width: 100px;
+                background-color: white;
+                border-radius: 50%; /*para transformar um quadrado numa bola coloca border radius 50%*/
+            }
+        
+    </style>
+</head>
+<body>
+<header>
+<h1> Meu site</h1>
+<nav> 
+<a href="#"> link </a>
+<a href="#"> link </a>
+<a href="#"> link </a>
+<a href="#"> link </a>
+<a href="#"> link </a>
+</nav>
+</header>
+<main>
+<section id="assuntos">
+<p> Esportes Política Tecnologia</p>
+</section>
+<section id="notícias">
+    <article>
+    <h2> Notícia sobre o Brasil</h2>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatum odio animi. Vitae ipsam voluptas ullam, aperiam enim, earum alias, repudiandae beatae excepturi quod illum labore! Eligendi beatae perferendis officiis.</p>
+    </article>
+    <article>
+        <aside>
+            <p> Artigo escrito por José da Silva</p>
+        </aside>
+    </article>
+</section>
+</main>
+<footer>
+    <p> Desenvolvido pelo Curso em Vídeo</p>
+</footer>
+<div id="bola"></div>
+</body>
+<!--
+-- head: são as configurações do site 
+-- Header (cabeçalho): Faz parte do conteúdo, está sempre no body
+-- Tags semânticas são mais bem vistas e posicionadas pelos mecanismos de busca
+ex: Header, nav, main, footer (substituem as div)
+Para aplicar sombra:
+Usa-se o box-shadow
+box-shadow: 1px 1px 1px black; (padrão)
+-->
+</html>

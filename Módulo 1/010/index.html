@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links </title>
+</head>
+<body>
+    <h1> Usando Links Externos </h1>
+    <p> Você pode acessar meu <a href="https://gustavoguanabara.github.io/" target="_blank rel="external">repositório público no github</a> </p>
+    <!-- a quer dizer âncora. href é a referência, o link de um site externo que se vai linkar com as palavras no texto-->
+    <!-- Quando se vai abrir um site ao clicar no link criado, que não é seu, o ideal é que se abra o link em nova aba, assim a pessoa pode voltar a seu site, para isso precisa-se acrescentar o comando: target="_blank rel="external" -->
+    <p> Você também pode acessar meu canal no <a href="https://youtube.com/cursoemvideo/" target="_blank rel="external">youtube</a> </p>
+    <h1> Usando Links internos </h1>
+    <p> Esta é a primeira página do site. Se quiser pode acessar também a minha <a href="pag002.html" rel="next"> segunda página </a></p>
+    <!-- Para linkar páginas internas do site não precisa da URL, basta apenas por o nome da página. Em href"pag002.html" segura o control e aperta espaço, vai aparecer todas as páginas internas existentes, escolhe e dá enter. *** Importante: a página pag002.html tem que estar na mesma pasta da index.html-->
+    <p> Você também pode acessar a nossa  <a href="Noticias/pag003.html" rel="next" target="_self">página de notícias</a> </p>
+    <h1> Links para download </h1>
+    <ul>
+        <li> <a href="Livro/Certificate-Ester-TavaresLinhares.pdf" download="meulivro.pdf" type="application/pdf">  Baixar o livro em PDF</a></li>
+        <li> <a href="Livro/Certificate-Ester-TavaresLinhares.zip" download=""meulivro.zip" type="application/zip"> Livro Compactado em ZIP </a></li>
+    </ul>
+    <!--Quando não se tiver ainda os links para inserir para download pois ainda se está criando a página, coloca-se uma # em: href="#"-->
+    <!-- Site iana.org/assignments/media vai se encontrar os Media types de cada arquivo. Esse site reune todos os tipos de arquivos para se efetuar o download. Exemplo: application/pdf e application/zip
+    !-- Sobre o arquivo.pdf se clicar com o botão direito sobre o link e clicar em "salvar link como" vai dar pra fazer download, mas se só clicar nele ele abre o arquivo da forma como foi feita acima-->
+
+</body>
+</html>

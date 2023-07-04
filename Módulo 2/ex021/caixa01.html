@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /*  box-level */
+        
+            background-color: cadetblue;
+            width: 300px;
+            height: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(253, 76, 200);
+            
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+        }
+        a { /*  Inline-level */
+            display: block;
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            outline-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1> Exemplo de Caixa box Level </h1>
+    
+        <p> Parágrafos também são exemplos de box level, mas os links <a href="#"> são exemplos de caixas inline-level.</a>  Vamos ver como tudo isso funciona </p>
+</body>
+<!-- 
+--Para centralizar a box level na página, inserir: margin:auto (se for um text: text-align: center)
+-- outline: é a linha que fica entre a margem e a borda/border. Seu limite de largura e altura é sempre limitado pelo da margem (ele não aumenta ou diminui ela)
+-- Shorthands Border:
+border: 10px solid darklategray
+
+substitui todas essas linhas:
+
+border-width: 10px;
+            border-style: solid;
+            border-color: rgb(253, 76, 200);
+
+-- Shorthand Padding:
+padding: 10px; (mesmo valor para todas as posições)
+cima, direita, baixo e esquerda 10px para todas
+
+-- Shorthand Margin:
+margin: 20px 20px 40px 20px;
+margin: 20px auto 40px auto; (as que ficaram como auto serão centralizadas)
+Substitui:
+ margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+-- Shorthand outline:
+Outline: 5px dashed salmon;
+Substitui: 
+outline-width: 5px;
+outline-style: dashed;
+outline-color: salmon;
+-->
+</html>
