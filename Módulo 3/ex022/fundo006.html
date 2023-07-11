@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
+            height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+
+            /* Shorthand - Background
+            1. Color 2. image 3. position 4. repeat 5. [Size] 6. attachment 
+            
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat  fixed;
+            background-size: cover;
+            
+            O [Size] em alguns navegadores não funciona em shorthanded, tem que inserir a parte embaixo da declaração.*/
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             text-align: justify;
             margin: auto;
@@ -39,6 +49,8 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, harum illo tempora, nisi atque molestiae obcaecati nesciunt, quisquam suscipit beatae cupiditate enim. Repudiandae quidem voluptates eos, hic recusandae repellendus corrupti!
         </p>
         <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, blanditiis velit? Soluta ratione magni repudiandae neque dignissimos, quod nostrum aliquam maiores dolores, culpa a laborum voluptatibus dicta aperiam consectetur earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat expedita, laboriosam at non magni nemo harum eum quaerat impedit temporibus. Magnam assumenda suscipit ipsa officiis vero obcaecati veniam mollitia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum id ipsum facilis accusamus sequi molestias, ea aspernatur cupiditate nobis numquam minima aliquid dolorem assumenda totam deleniti, ex, soluta adipisci ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptas quis deleniti consequatur, sapiente natus laudantium officia dolor vel optio quasi necessitatibus enim quibusdam provident repudiandae rem odio omnis facere?</p>
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, minus incidunt. Quo dignissimos animi in placeat repudiandae illo, corporis, libero, cupiditate nesciunt aperiam pariatur minima beatae. Excepturi iusto mollitia maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ducimus quaerat corporis repellat, repudiandae dignissimos accusantium cupiditate dolorum commodi fuga et numquam consequuntur explicabo sapiente earum quia adipisci ex iure!</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur inventore quod similique numquam consequatur in veritatis recusandae culpa! Mollitia amet nam placeat nisi voluptatibus esse, odio cupiditate labore vitae obcaecati. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis iusto soluta illo, adipisci similique molestias ut, doloribus temporibus officiis ea nesciunt at doloremque eveniet animi ratione illum ipsum commodi. Quidem?</p>
     </main>
 </body>
 <!-- Porque colocar primeiro uma cor preta para o background- de fundo? porque quando o site carrega primeiro carrega o texto e depois as imagens. Então quando servidor estiver lento, pode ser que o background demore mais para carregar
