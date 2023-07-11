@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+ margin: 0px;
+ padding: 0px;
+
+}
+html, body {
+background-color: darkgray;
+min-height: 100vh; /* aqui diz que o tamanho mínimo da imagem de fundo vai ser 100% da view port ou seja, toda a parte branca cheia da tela
+vh: altura
+vw: Largura */
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header >h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+     /* text-transform: uppercase; transforma o título no header em letra maiúscula */
+}
+header > p {
+    padding-bottom: 50px;
+}
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+section.normal { /* configura o estilo de todas as sessões informadas no hmtl como "normal! */
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgb(83, 79, 79);
+    color: white;
+}
+section.imagem >p {
+    width: 400px;
+    background-color: rgb(39, 37, 37);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
