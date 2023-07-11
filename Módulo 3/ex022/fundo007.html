@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {
+        position: relative;
+        height: 500px;
+        background-color: purple;
+        padding: 10px;
+        background-image: url('imagens/target001.png');
+        background-size: 100% 100%;
+        }
+
+        #conteudo {
+        position: absolute;
+        background-image: url('imagens/target001.png');
+        background-size: 100% 100%;
+        height: 200px;
+        width: 400px;
+        left: 50%;
+        top:50%;
+        background-color: yellow;
+        transform: translate(-50%, -50%);
+        }
+    </style>
+    <!--
+    --margin: auto; só serve para alinhamento horizontal
+    -- Todo posicionamento em boxing por padrão no HTML é "position: relative"
+    -- Quando a posição for absolute, se insere a distância de top e left em relação ao elemento de fundo e/ou porcentagem
+    -- Tag Transform: vai atuar sobre a caixa amarela em posição absolute, movendo ela -20px para a esquerda e 20px para baixo (quando coloca negativo mexe para a esquerda)-->
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+             
+        </article>
+    </section>
+</body>
+</html>
