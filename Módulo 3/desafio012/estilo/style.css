@@ -1,12 +1,20 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+:root {
+    --fonte1: verdana, Geneva, tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3:  'Sriracha', cursive;
+}
 * {
  margin: 0px;
  padding: 0px;
+ font-size: 1em;
 
 }
 html, body {
 background-color: darkgray;
+font-family: var(--fonte1);
 min-height: 100vh; /* aqui diz que o tamanho mínimo da imagem de fundo vai ser 100% da view port ou seja, toda a parte branca cheia da tela
 vh: altura
 vw: Largura */
@@ -18,6 +26,8 @@ header {
 }
 header >h1 {
     padding-top: 50px;
+    font-family: var(--fonte2);
+    font-size: 10vw; /* com essa função, ao se diminuir a largura da tela, o tamanho da letra também ficará menor conforme vai se mexendo na largura da tela (5% da view port (vw)*/
     font-variant: small-caps;
      /* text-transform: uppercase; transforma o título no header em letra maiúscula */
 }
@@ -38,6 +48,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 section.normal { /* configura o estilo de todas as sessões informadas no hmtl como "normal! */
     background-color: white;
@@ -46,9 +58,11 @@ section.normal { /* configura o estilo de todas as sessões informadas no hmtl c
 section.imagem {
     background-color: rgb(83, 79, 79);
     color: white;
+   
 }
 section.imagem >p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px 5px;
     background-color: rgb(39, 37, 37);
 }
 
