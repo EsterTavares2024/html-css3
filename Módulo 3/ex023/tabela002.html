@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style> 
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+    }
+    table {
+     width: 500px;   
+     border-collapse: collapse;
+     position: relative;
+    }
+    td, th {
+        border: 1px solid black;
+        padding: 10px;
+    }
+    tbody > tr:nth-child(2n) { /* essa pseudo-classe :nth-child(2n) significa que vai zebrar de 2 em 2 linhas (pula 1 e zebra a outra) em todas as linhas contidas no corpo tbody. Pode se usar em vez de (2n) por: odd ou 2n-1: Impar even ou 2n: par */
+        background-color: lightgray;
+
+    }
+    thead, tfoot {
+        background-color: gray;
+        color: white;
+    }
+    thead >tr >th { /* função para congelar a primeira linha Estado e população na tela */
+        position: sticky;
+        top: -1px;
+        background-color: gray;
+    }
+    td.num {
+        text-align: right;
+    }
+
+    </style>
+</head>
+<body>
+    <h1> Usando Tabelas Grandes</h1>
+    
+    
+    <!-- Anatomia para tabelas grandes
+    TABLE
+        CAPTION [legenda da tabela, se coloca só texto]
+        THEAD
+           TR, TD, TH [TH = título]
+        TBODY
+           TR, TD, TH
+        TFOOT
+         TR, TD, TH
+         --> 
+<table>
+    <caption> População das Unidades Federativas </caption>
+    <thead>
+    <tr>
+       <th scope="col"> Estado </th> <!--para dizer que Estado é o th, o título da COLUNA atual (pois os dados estão logo abaixo na coluna), inserir a tag scope="col" -->
+       <th scope="col" style="width: 90px;"> População </th>
+    </tr>
+    </thead>
+    <tbody>
+     <tr>
+        <td> São Paulo </td>
+        <td class="num"> 44 420 459 </td>
+     </tr>
+     <tr>
+        <td> Minas Gerais </td>
+        <td class="num"> 20 538 718 </td>
+     </tr>
+     <tr>
+        <td> Rio de Janeiro </td>
+        <td class="num"> 16 054 524 </td>
+     </tr>
+     <tr>
+        <td> Bahia </td>
+        <td class="num"> 14 136 417 </td>
+     </tr>
+     <tr>
+        <td> Paraná </td>
+        <td class="num"> 11 443 208 </td>
+     </tr>
+     <tr>
+        <td> Rio Grande do Sul </td>
+        <td class="num"> 10 880 506 </td>
+     </tr>
+     <tr>
+        <td> Pernambuco </td>
+        <td class="num"> 9 058 155 </td>
+     </tr>
+     <tr>
+        <td> Ceará </td>
+        <td class="num"> 8 791 688 </td>
+     </tr>
+     <tr>
+        <td> Pará </td>
+        <td class="num"> 8 116 132 </td>
+     </tr>
+     <tr>
+        <td> Santa Catarina </td>
+        <td class="num"> 7 609 601 </td>
+     </tr>
+    </tbody>
+    <tfoot>
+     <tr scope="row">  <th> Total de Habitantes </th> <!--para dizer que o Total de habitantes é o th, o título da LINHA atual (pois o nº total de habitantes está na mesma linha que o título), inserir a tag scope="row" -->
+           <td class="num"> <strong>203 062 512</strong> </td>
+    </tr>
+    </tfoot>
+</table>
+<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, enim unde? Pariatur corporis nostrum quaerat veniam eos ipsum eum eius quis cumque, iusto assumenda beatae ea neque veritatis modi eaque? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos corrupti harum aliquam ipsa deserunt at, eius ad dolor, repudiandae quas nulla quod ea beatae. Harum sunt tempore facere dolores qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio excepturi praesentium in ut debitis adipisci repellat. Natus provident beatae ea labore ad ab perspiciatis voluptatibus temporibus! Consequuntur fugit corporis in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, perspiciatis, quam beatae tempora omnis cupiditate earum debitis magni, porro similique eaque quis voluptatibus repellendus. Illo quidem eos doloremque similique voluptatibus.</p>
+<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, enim unde? Pariatur corporis nostrum quaerat veniam eos ipsum eum eius quis cumque, iusto assumenda beatae ea neque veritatis modi eaque? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos corrupti harum aliquam ipsa deserunt at, eius ad dolor, repudiandae quas nulla quod ea beatae. Harum sunt tempore facere dolores qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio excepturi praesentium in ut debitis adipisci repellat. Natus provident beatae ea labore ad ab perspiciatis voluptatibus temporibus! Consequuntur fugit corporis in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, perspiciatis, quam beatae tempora omnis cupiditate earum debitis magni, porro similique eaque quis voluptatibus repellendus. Illo quidem eos doloremque similique voluptatibus.</p>
+<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, enim unde? Pariatur corporis nostrum quaerat veniam eos ipsum eum eius quis cumque, iusto assumenda beatae ea neque veritatis modi eaque? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos corrupti harum aliquam ipsa deserunt at, eius ad dolor, repudiandae quas nulla quod ea beatae. Harum sunt tempore facere dolores qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio excepturi praesentium in ut debitis adipisci repellat. Natus provident beatae ea labore ad ab perspiciatis voluptatibus temporibus! Consequuntur fugit corporis in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, perspiciatis, quam beatae tempora omnis cupiditate earum debitis magni, porro similique eaque quis voluptatibus repellendus. Illo quidem eos doloremque similique voluptatibus.</p>
+<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, enim unde? Pariatur corporis nostrum quaerat veniam eos ipsum eum eius quis cumque, iusto assumenda beatae ea neque veritatis modi eaque? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos corrupti harum aliquam ipsa deserunt at, eius ad dolor, repudiandae quas nulla quod ea beatae. Harum sunt tempore facere dolores qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio excepturi praesentium in ut debitis adipisci repellat. Natus provident beatae ea labore ad ab perspiciatis voluptatibus temporibus! Consequuntur fugit corporis in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, perspiciatis, quam beatae tempora omnis cupiditate earum debitis magni, porro similique eaque quis voluptatibus repellendus. Illo quidem eos doloremque similique voluptatibus.</p>
+<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, enim unde? Pariatur corporis nostrum quaerat veniam eos ipsum eum eius quis cumque, iusto assumenda beatae ea neque veritatis modi eaque? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos corrupti harum aliquam ipsa deserunt at, eius ad dolor, repudiandae quas nulla quod ea beatae. Harum sunt tempore facere dolores qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio excepturi praesentium in ut debitis adipisci repellat. Natus provident beatae ea labore ad ab perspiciatis voluptatibus temporibus! Consequuntur fugit corporis in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, perspiciatis, quam beatae tempora omnis cupiditate earum debitis magni, porro similique eaque quis voluptatibus repellendus. Illo quidem eos doloremque similique voluptatibus.</p>
+</body>
+</html>
