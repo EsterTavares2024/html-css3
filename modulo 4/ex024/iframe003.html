@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1> Faça uma escolha</h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio, amet placeat voluptatibus voluptatum excepturi, quas dolores debitis quos cupiditate quisquam nesciunt minus, labore expedita sint laudantium perferendis praesentium deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis excepturi vero reprehenderit explicabo placeat tempora veniam accusamus? Quos minima natus aliquam assumenda. Doloribus reiciendis reprehenderit, doloremque velit eum nulla excepturi.</p>
+
+    <ul>
+        <li> <a href="paginasextras/pag001.html" target="frame"> Primeira Página</a></li>
+        <li> <a href="paginasextras/pag002.html" target="frame"> Segunda Página</a></li>
+        <li> <a href="paginasextras/pag003.html" target="frame"> Terceira Página</a></li>
+    </ul>
+    <!-- Para fazer com que ao se clicar nos links de: primeira/segunda ou terceira página o conteúdo apareça dentro da caixa de iframe configurada abaixo, tem que se dar um ID="tela" para configurar o estilo css em <style> bem como um name="frame" e target="frame" *(é obrigatório ter o name para poder funcionar)*-->
+    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem aperiam doloremque pariatur iste quo et explicabo molestiae eaque corporis cumque voluptatum nulla repudiandae, eos maiores porro, unde saepe dicta eius. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non nobis molestiae cupiditate blanditiis illo? Hic placeat magnam aliquam ipsa, distinctio ducimus tenetur reprehenderit similique cupiditate atque eos corrupti nisi repudiandae!</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1> Escolha uma das opções acima </h1> <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem aperiam doloremque pariatur iste quo et explicabo molestiae eaque corporis cumque voluptatum nulla repudiandae, eos maiores porro, unde saepe dicta eius. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non nobis molestiae cupiditate blanditiis illo? Hic placeat magnam aliquam ipsa, distinctio ducimus tenetur reprehenderit similique cupiditate atque eos corrupti nisi repudiandae!.</p><img src='imagens/cursoemvideo.png'>">
+        <p> Infelizmente seu navegador não é compatível com isso. </p>
+    <!-- Para aparecer algum conteúdo na página inicial dentro do bloco de iframe, para que ele não apareca vazio, é só por acima em src="paginasextras/pag001" por exemplo ou srcdoc para inserir frases, orientações-->
+    </iframe>
+    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam necessitatibus quod, deserunt doloribus labore nulla similique numquam? Neque unde, tempora dolore possimus autem mollitia tempore, eius ducimus facere, eaque assumenda. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur obcaecati ipsum ullam rem quos vero iusto at iste mollitia soluta sapiente unde modi, quas delectus ipsa sed vitae, illo natus!</p>
+</body>
+</html>
