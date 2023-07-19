@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Teste de Formulário </h1>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+    <p>
+        <label for="iusu"> Usuário:</label>
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do usuário" autocomplete="username">
+    </p>
+    <p>
+        <label for="isen"> Senha: </label>
+        <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" placeholder="mínimo 8 letras" autocomplete="current-password">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</form>
+<!-- A função minlenght e maxlenght faz com que o nome do usuário seja limitado em número de letras pra mais e/ou pra menos
+-- size="10" é relacionado ao tamanho da caixa onde se coloca os inputs, mesmo que se tenha um tamanho grande de caracteres pra senha, ele só vai mostrar 10 na caixa pois foi limitado a isso (cria um scroll pro lado quando passar de 10 caracteres)
+-- Placeholder: dica do que preencher na caixa de forma sombreada
+--Dica do que escrever na caixa do form: é obrigatório estar com o autocomplete on na tag <form e em usuário/senha, tem que ter o autocomplete="username"/"current-password" assim, quando a pessoa for digitar novamente os dados o username dela vai aparecer como sugestão para escrever-->
+</body>
+</html>

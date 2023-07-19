@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+   <h1> Meu primeiro Formulário</h1> 
+   <form action="cadastro.php" method="POST" autocomplete="off">
+    <p> <label for="inome">Nome</label>: <input type="text" name="nome" id="inome"></p>
+    <p> <label for="isobrenome">Sobrenome</label>: <input type="text" name="sobrenome" id="isobrenome"></p>
+    <p> <input type="submit" value="Enviar"></p>
+   </form>
+</body>
+<!-- Toda caixa de texto (input:text) tem que ter obrigatoriamente nome e ID
+--Input: submit para criar o botão "enviar"
+-- Como desligar as sugestões de inputs no formukário:
+autocomplete: off
+-- Cadastro.php é um script
+-- Diferença entre name e id:
+Name: pais util para html e php
+Id: mais útil para o javascript
+--sempre tem que relacionar as labels aos IDs delas para facilitar para os mecanismos de busca, além disso, ao utilizar label, efetua-se uma ligação entre nome/sobrenome e a caixa onde se irá digitar o input, isso ajuda também quando se preencher o forms no celular, fica mais sensível só ao se clicar em cima de nome/sobrenome, aparece o cursor piscando na caixinha.
+--*** Quando não se escolhe método nenhum, o método padrão é o GET
+-->
+</html>
