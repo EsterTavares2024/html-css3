@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1> Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend> Sexo</legend>
+            <input type="radio" name="sexo" id="imasc" value="M"> <label for="imasc">Masculino</label> <br>
+            <input type="radio" name="sexo" id="ifem" Value="F" checked> <label for="ifem">Feminino</label> <br>
+         </fieldset>
+
+            <!-- SOMENTE quando se usa botões RADIO:
+            -- Em situações nas quais ao se selecionar masc ou femin não dê de desmarcar, ou quando se seleciona os dois e os dois ficam marcados, devemos por names iguais para TODAS as opções nos botões radio. Ex: name="sexo" [o ID tem que ser diferente!]
+            --Para que o formulário já venha pre preenchido/ já com check em feminino, tem que inserir no input  "checked" -->
+
+            <fieldset>
+            <legend> Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label><br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label><br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label><br>
+         </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <!--Não esquecer de envelopar Basquete/Futebol com a tag Label e inserir o mesmo nome do ID entre os parenteses para podermos efetuar a ligação entre o input e oque vai ser digitado na caixinha-->
+</body>
+</html>
