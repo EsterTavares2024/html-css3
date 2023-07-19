@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1> Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <input type="color" name="cor" id="icor" value="#00ff00"> <label for="icor">Cor</label>
+        </p>
+        <p>
+        <label for="inivel">Nível de Satisfação:</label> 
+        <input type="range" name="nivel" id="inivel" min="1" max="5" value="5"> 
+        </p>
+        <!-- O value é um valor pré determinado para que apareça logo de cara quando a pessoa vai preencher o formulario, escolhido por quem criou ele
+        --Sempre testar o formulário em vários navegadores para ver se houve alterações, especialmente no safari desktop
+        --input:image: é para usar quando se tem um forms com várias imagens e se quer que o visitante do site escolha uma.. o input:file é para o visitante fazer upload de uma foto
+        -- IMPORTANTE! Usar o método POST quando for criar input de FILE!!!-->
+        <p>
+        <label for="ifoto"> Foto de Perfil</label>
+        <input type="file" name="foto" id="ifoto">
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
