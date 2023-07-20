@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1> Exempçlo de Formulário Sem tag input </h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <pr>
+            <label for="iest"> Estado </label>
+            <select name="estado" id="iest">
+                <option value="" selected> ---Escolha--- </option>
+                <optgroup label="Região Sudoeste">
+                    <option value="MG"> Minas Gerais</option>
+                    <option value="RJ"> Rio de Janeiro</option>
+                    <option value="SP"> São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MG"> Rio Grande do Norte</option>
+                    <option value="MG"> Pernambuco</option>
+                    <option value="MG"> Maranhão</option>
+                </optgroup>
+            </select>
+        </pr>
+        <p>
+            <label for="iprof"> Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM"> Administrador</option>
+                <option> Contabilista</option>
+                <option value="DEV"> Desenvolvedor</option>
+                
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg"> Mensagem:</label> <br>
+            <textarea name="msg" id="imsmg" cols="30" rows="10"> Sua mensagem...</textarea>
+        </p>
+        <p> 
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+
+        </p>
+    </form>
+</body>
+<!-- A TAG OPTgroup cria os subgrupos dentro das opções de select como sudoeste, nordeste
+-- Para se deixar pré selecionado um estado, basta inserir selected do lado de "RJ"
+--Não precisa ter nome o <datalist id="lstprof" acima
+-- Para retirar a sigra ADM da caixa de opções que aparecerá de profissões, basta remover: value="ADM"
+-- A diferença entre tag optgroup e datalist, é que no datalist se não se achar a profissão /estado em que se mora, pode-se digitar a informação na caixinha acrescentando-a, o mesmo não ocorre com o optgroup. Obs ele não vai acrescentar as sugestões de profissões de outros visitantes pra mim-->
+</html>
