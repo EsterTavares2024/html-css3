@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1> Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label fpr="in1"> Número 1:</label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required 
+            oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            <!--Essa função acima (oninput) já  é javascript, é a fórmula para somar, tem que sempre inserir no código de cada um dos números de input que serão somados
+            --IMPORTANTE: A fórmula acima é só pra calcular e mostrar o valor na tela, quando clica em enviar o valor não aparece no log-->
+        </p>
+        <p>
+            <label for="in2"> Número2:</label>
+            <input type="number" name="n2" id="in2" min="0" max="50"required
+            oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="isoma"> Soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+        <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
