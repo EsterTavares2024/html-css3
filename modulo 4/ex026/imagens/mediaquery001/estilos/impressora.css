@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/*Estilos para as impressora
+Por conta disso, usamos o display:none para o menu*/
+*{
+    margin: 10px;
+    padding: 10px;
+
+}
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em; /*espaçamento entre linhas */
+    text-align: justify;
+   
+}
+menu {
+    display:none;
+    /* a função acima remove da media query quando se for imprimir, toda essa parte aqui:
+     <menu>
+            <ul> 
+                <li> Esportes</li>
+                <li> Política</li>
+                <li> Tecnologia</li>
+            </ul>; */
+}
+article {
+    width: 100%;
+    text-align: justify;
+}
+article::after {
+    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
+    /* essa frase acima aparecerá abaixo do texto do artigo quando se clicar em imprimir */
+}
