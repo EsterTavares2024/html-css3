@@ -1,2 +1,8 @@
 @charset "UTF-8";
 /* Orientação Paisagem */
+
+body {
+    background: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom; /*com isso a imagem em paisagem vai ficar completa, preenchendo toda a tela */
+    background-repeat: no-repeat;
+}

@@ -1,2 +1,19 @@
 @charset "UTF-8";
 /* COnfigurações Gerais */
+* {
+    margin: 0px;
+    padding:0px;
+}
+html, body {
+    width:100vw; /* 100vw é a largura 100% da tela e vh é a altura total da tela */
+    height:100vh;
+    background-color: #233eff;
+    background-size: contain; /* contain faz a imagem em paisagem aparecer inteira */
+    background-repeat: no-repeat;
+}
+h1 {
+    color: white;
+    text-shadow: 2px 2px 0px #1526a7;
+    padding:10px;
+}
+
