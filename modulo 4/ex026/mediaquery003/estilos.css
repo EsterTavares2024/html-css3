@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="pr-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Query</title>
-    <link rel="stylesheet" href="estilos.css">
-<style>
-    /* Declarações Gerais */
-    * {
+@charset "UTF-8";
+/* Declarações Gerais */
+* {
     margin: 0px;
     padding:0px;
 }
@@ -40,12 +33,3 @@ h1 {
         background-repeat: no-repeat;
     }
 }
-
-</style>
-</head>
-<body>
-    <h1> Mude a orientação do seu dispositivo</h1>
-</body>
-
-<!--para projetos pequenos podemos inserir todas as declarações no html, sem precisar criar folha de estilo para cada modo, já projetos grandes, precisa separar todos -->
-</html>
