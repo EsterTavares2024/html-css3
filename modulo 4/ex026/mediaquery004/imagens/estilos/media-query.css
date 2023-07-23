@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* Todas as demais medias */
+/* Typical device breakpoints: recomendações W3c
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768 até 992px
+Desktop: 992 até 1200px
+TV-Grandes telas: Acima de 1200px
+ */
+
+@media print { /* Versão de impressão */
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+body {
+    background-image: url(../icon-print.png); /* desnessário porque não imprime */
+}
+main {
+    border: 2px solid black;
+}
+main::after {
+    content: 'Essa impressão foi feita através do site cursoemvideo.com';
+}
+main h1 {
+    text-shadow: none;
+    color:black;
+}
+}
+/* Como já foi feito estilo css para mobile first no arquivo styles.css, não precisamos inserir novamente aqui, pois o site já foi configurado para dar preferência a celulares/telas pequenas */
+
+
+/* configuração de tamanho para tablet */
+@media screen and (min-width: 768px) and (max-width:992px) {  
+    body{
+        background-image: url(../back-tablet.jpg);
+    }
+main {
+    width: 90vw;
+}
+img#phone {display: none;}
+img#tablet {display: block;}
+img#print {display: none;}
+img#desktop {display: none;}
+img#tv {display: none;}
+}
+
+ 
+/* configuração de tamanho para Desktop */
+@media screen and (min-width: 992px) and (max-width:1200px) {  
+    body {
+        background-image: url(../back-pc.jpg);
+    }
+main {
+width: 90vw;
+}
+img#phone {display: none;}
+img#tablet {display: none;}
+img#print {display: none;}
+img#desktop {display: block;}
+img#tv {display: none;}
+} 
+
+/* configuração de tamanho para telas grandes */
+@media screen and (min-width: 1200px) {  
+    body {
+        background-image: url(../back-tv.jpg);
+    }
+main {
+    width: 90vw;
+}
+img#phone {display: none;}
+img#tablet {display: none;}
+img#print {display: none;}
+img#desktop {display: none;}
+img#tv {display: block;}
+} 
